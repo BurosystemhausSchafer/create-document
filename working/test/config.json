@@ -1,3 +1,5 @@
 {
-    "a": "b"
+    "mapData": {
+        "SCHULUNGSTEILNEHMER1": "Hans Wurst"
+    }
 }
