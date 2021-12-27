@@ -23,7 +23,7 @@ class DocGenerator {
         }
 
         // Das erste Argument muss immer das Working Directory sein
-        $this->workingDir = __DIR__."\\working\\".$argv[1];
+        $this->workingDir = $argv[1];
 
         // Directory überprüfgen
         if(!is_dir($this->workingDir)) {
