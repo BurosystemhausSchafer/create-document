@@ -45,7 +45,7 @@ class DocGenerator {
         if(is_file($this->configFile)) {
 
             // Konfigurationsdatei lesen
-            $this->config = json_decode(file_get_contents($this->configFile));
+            $this->config = json_decode(file_get_contents($this->configFile), true);
 
         } else {
             $this->throwError("Config-Datei wurde nicht gefunden!");
