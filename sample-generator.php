@@ -16,7 +16,7 @@ $mpdf = new \Mpdf\Mpdf([
 ]);
 
 // MPDF schreiben
-$mpdf->WriteHTML(print_r($this->config, true));
+$mpdf->WriteHTML(print_r($d->config, true));
 
 // Ausgeben
 $mpdf->Output($d->workingDir.'/output.pdf', \Mpdf\Output\Destination::FILE);
