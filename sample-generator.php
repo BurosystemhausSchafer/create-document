@@ -1,8 +1,8 @@
 <?php 
 
 // Dokumenten Generator importieren
-require_once('./vendor/autoload.php');
-require_once('./doc-generator.php');
+require_once(__DIR__.'/vendor/autoload.php');
+require_once(__DIR__.'/doc-generator.php');
 
 
 // Neuen Documenten Generator erstellen

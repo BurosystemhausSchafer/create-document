@@ -16,7 +16,11 @@ Aktuell haben wir aber Vorlagen dafür, wie man mit PHP Dokumente generiert. Des
 
 ### Was wird benötigt
 1. Man benötigt zunächst PHP. Das Skript ist kompatibel mit Version 8. (Download https://www.php.net/downloads.php)
+1b. In der PHP.ini nach der Zeile `;extension=gd` und durch `extension=gd` ersetzten
 2. Für manche Versionen benötigt man GhostScript. Grade wenn man Dateien teilen möchte. (Download https://ghostscript.com/releases/gsdnld.html)
+3. Damit PHP auf dem Server läuft (grade bei aktuellen PHP Versionen) benötigt man (Microsoft Visual C++ Redistributable)
+4. Falls man das Repository auf dem Server erstellen will, braucht man git und composer
+
 
 ### Übersicht der Dateien
 - doc-generator.php = Die PHP Klasse, die man für sein Skript nutzt
