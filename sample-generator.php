@@ -8,7 +8,6 @@ require_once(__DIR__.'/doc-generator.php');
 // Neuen Documenten Generator erstellen
 $d = new DocGenerator();
 
-
 $mpdf = new \Mpdf\Mpdf([
     'mode' => 'c',
     'format' => 'A4',
@@ -17,12 +16,10 @@ $mpdf = new \Mpdf\Mpdf([
 ]);
 
 // MPDF schreiben
-$mpdf->WriteHTML("Hallo i Bims 1 PDF");
+$mpdf->WriteHTML(print_r($this->config, true));
 
 // Ausgeben
 $mpdf->Output($d->workingDir.'/output.pdf', \Mpdf\Output\Destination::FILE);
-
-
 
 
 ?>
